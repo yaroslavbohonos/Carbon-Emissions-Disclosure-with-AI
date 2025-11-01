@@ -27,6 +27,16 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Folder Include="backend\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py" />
+    <Compile Include="backend\cache.py" />
+    <Compile Include="backend\data_processor.py" />
+    <Compile Include="backend\gemini_client.py" />
+    <Compile Include="backend\score_engine.py" />
+    <Compile Include="backend\storage.py" />
+    <Compile Include="backend\__init__.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <!-- Specify pre- and post-build commands in the BeforeBuild and 
